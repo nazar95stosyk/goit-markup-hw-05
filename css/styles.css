@@ -95,6 +95,7 @@ img {
   position: relative;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background;
 }
 .header-item-page:hover,
 .header-item-page:focus {
@@ -134,6 +135,7 @@ img {
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .header-address-item-mail:hover,
 .header-address-item-mail:focus {
@@ -149,6 +151,7 @@ img {
   padding: 24px 0 23px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .header-address-item-tel:hover,
 .header-address-item-tel:focus {
@@ -194,6 +197,7 @@ img {
   border: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -339,6 +343,7 @@ img {
   border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -429,6 +434,7 @@ img {
   padding: 12px 24px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background, color, border-color, box-shadow;
 }
 .portfolio-btn:is(:hover, :focus) {
   color: var(--main-background-color);
@@ -451,6 +457,7 @@ img {
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 .portfolio-gallery-item-link:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -538,6 +545,7 @@ img {
   border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
