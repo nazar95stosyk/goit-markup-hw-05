@@ -456,7 +456,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
 }
-.portfolio-gallery-item:is(:hover, :focus) {
+.portfolio-gallery-item-link:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -467,19 +467,19 @@ img {
   transition-property: transform;
 }
 .portfolio-gallery-item-link:hover .portfolio-text-overlay,
-.portfolio-gallery-item:focus .portfolio-text-overlay {
+.portfolio-gallery-item-link:focus .portfolio-text-overlay {
   transform: translateY(0);
 }
 .portfolio-overlay {
   position: relative;
   width: 360px;
   height: 300px;
-  overflow: auto;
+  overflow: hidden;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
 }
-.portfolio-gallery-item:is(:hover, :focus) .portfolio-overlay {
+.portfolio-gallery-item-link:is(:hover, :focus) .portfolio-overlay {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .portfolio-text-overlay {
@@ -609,28 +609,30 @@ img {
 }
 .modal {
   width: 408px;
-  height: 584px;
-  background-color: #fff;
+  min-height: 584px;
+  background-color: #fcfcfc;
   border-radius: 4px;
-  display: flex;
-  justify-content: flex-end;
+  position: relative;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-close-btn {
   border-radius: 50%;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-top: 24px;
-  margin-right: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 .modal-close-btn {
   width: 24px;
   height: 24px;
-  background-color: #fff;
+  background-color: #e7e9fc;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background;
@@ -645,7 +647,7 @@ img {
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill;
+  transition-property: fill, transparent;
 }
 .modal-close-btn:hover .modal-close-btn-icon {
   fill: #ffffff;
@@ -653,7 +655,7 @@ img {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background: var(--hover-focus-color);
-  border: none;
+  border-color: transparent;
 }
 .is-hidden {
   visibility: hidden;
