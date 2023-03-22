@@ -464,7 +464,7 @@ img {
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
+  transition-property: box-shadow;
 }
 .portfolio-gallery-item-link:hover .portfolio-text-overlay,
 .portfolio-gallery-item-link:focus .portfolio-text-overlay {
@@ -628,16 +628,11 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
-}
-.modal-close-btn {
-  width: 24px;
-  height: 24px;
   background-color: #e7e9fc;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background;
 }
-
 .modal-close-btn-icon {
   width: 8px;
   height: 8px;
@@ -656,6 +651,16 @@ img {
 .modal-close-btn:focus {
   background: var(--hover-focus-color);
   border-color: transparent;
+}
+.modal-title {
+  padding-top: 72px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 .is-hidden {
   visibility: hidden;
